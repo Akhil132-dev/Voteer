@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  width: 20%;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 2px 4px 7px 2px rgb(75, 68, 68);
+}
+
+.card > img {
+  height: 200px;
+}
+.card > button {
+  margin: 10px;
+}
+h2 {
+  margin: 10px;
+}

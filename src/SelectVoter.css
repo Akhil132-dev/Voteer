@@ -1,0 +1,28 @@
+.SelectVoter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+}
+.from {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid #fff;
+  margin: 50px;
+  height: 50vh;
+  box-shadow: 2px 4px 7px 2px rgb(75, 68, 68);
+}
+
+.input {
+  width: 50%;
+  margin: 10px;
+}
+.from > button {
+  width: 50%;
+  margin: 20px;
+}

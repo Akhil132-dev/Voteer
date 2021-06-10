@@ -1,0 +1,11 @@
+body {
+  background-color: #d8eacc;
+}
+
+.sine_up {
+  display: flex !important;
+  flex-direction: column;
+}
+.input1 {
+  margin: 20px;
+}

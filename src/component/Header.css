@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&family=Bree+Serif&display=swap");
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  height: 80px;
+  transition: background-color 0.5s;
+}
+.header:hover {
+  background-color: #ffffff;
+}
+.header__option {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+.header__option * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+.header > img {
+  margin: 0.8rem;
+  height: 60px;
+}
+.header__option > li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  padding: 0;
+}
+.Links {
+  padding: 0.5em 0.8em;
+  color: #241c15;
+  position: relative;
+  text-decoration: none;
+  font-size: 15px;
+}
+.Links::before,
+.Links::after {
+  content: "";
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.Links::before {
+  content: "";
+  right: 0;
+  top: 0;
+  border-top: 3px solid #007c89;
+  border-right: 3px solid #007c89;
+  transform: translate(-100%, 50%);
+}
+.Links::after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid #007c89;
+  border-left: 3px solid #007c89;
+  transform: translate(100%, -50%);
+}
+
+.Links:hover:before,
+.Links:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+.Links:hover {
+  color: #007c89;
+}
+.buttons {
+  background-color: #007c89;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 15px;
+  outline: none;
+  border: none;
+  width: 120px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.buttons:hover {
+  background-color: #055d6b;
+}
+.header.active {
+  background-color: #ffffff;
+}
